@@ -16,7 +16,8 @@ def humi():
     if result:
         humidity, temperature = result
         return render_template('humiture.html', humidity=humidity, temperature=temperature)
-
+    else:
+        return render_template('humiture.html', humidity='N/A', temperature='N/A')
     return 'this is a test'
 
 

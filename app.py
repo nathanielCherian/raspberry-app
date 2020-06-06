@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from .humiture import read_dht11_dat
+from humiture import read_dht11_dat
 
 app = Flask(__name__)
 

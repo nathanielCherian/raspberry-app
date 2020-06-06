@@ -15,7 +15,7 @@ def humi():
     result = read_dht11_dat()
     if result:
         humidity, temperature = result
-        return render_template('humiture.html', humidity=str(humidity) + '%', temperature=str(temperature) + '°C')
+        return render_template('humiture.html', humidity=str(humidity) + '%', temperature=str(temperature) + ' C')
     else:
         return render_template('humiture.html', humidity='N/A', temperature='N/A')
     return 'this is a test'
